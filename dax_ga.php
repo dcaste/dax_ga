@@ -17,7 +17,16 @@ add_action('wp_footer', 'dax_google_analytics');
 function dax_google_analytics(){
 ?>
 
-ADD CODE HERE
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR ID GOES HERE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'YOUR ID GOES HERE');
+</script>
+
 
 <?php
 };
